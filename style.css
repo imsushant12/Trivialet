@@ -8,7 +8,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #f9ad29;
+  background: linear-gradient(#f9ad29, black);
   line-height: 40px;
 }
 
@@ -95,5 +95,7 @@ form .text_field {
 /*Login-Page Style Ends*/
 
 /*Admin-Page Style Ends*/
-
+.admin-container{
+  margin:5rem;
+}
 /*Admin-Page Style Ends*/
