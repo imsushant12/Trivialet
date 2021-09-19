@@ -4,6 +4,8 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/*Login-Page Style Start*/
+
 .topnav {
   overflow: hidden;
   background-color: #f9ad29;
@@ -89,3 +91,5 @@ form .text_field {
   background: #000;
   color: #fff;
 }
+
+/*Login-Page Style Ends*/
