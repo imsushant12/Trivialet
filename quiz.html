@@ -48,9 +48,7 @@
 
     <div class="container">
 
-
         <form action="/submitquiz" method="post" id="form1">
-
 
             {% for question in question_list %}
 
@@ -60,13 +58,7 @@
                 </div>
 
                 <div class="card-body">
-
-
                     <div class="col-sm-10">
-
-
-
-
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="{{question.q_id}}"
                                 id="{{question.option1}}" value="{{question.option1}}">
@@ -96,28 +88,17 @@
                             </label>
                         </div>
                     </div>
-
-
                 </div>
             </div><br>
 
             {% endfor %}
 
-
             <div class="col-12 text-center">
                 <button type="submit" class="btn submit">Submit</button>
             </div>
-
-
-
-
-
-        </form><br><br><br><br>
-
-
+        </form>
+        <br><br><br><br>
     </div>
-
-
     <script type="text/javascript">
         function timeout() {
             var minute = Math.floor(timeLeft / 60);
@@ -134,11 +115,7 @@
 
             var tm = setTimeout(function () { timeout() }, 1000);
         }
-
-
-
     </script>
-
     <!-- <script src="{{ url_for('static', filename='js/script.js') }}"></script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

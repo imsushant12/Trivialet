@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="images/logo.png" type="image/gif" sizes="16x16">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <title>Start Quiz</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="CSS/styles.css">
+	<title>Start Quiz</title>
 </head>
+
 <body>
 	<div class="outerbox">
 		<div class="main_box">
 			<div class="left">
 				<div class="instruction" style="color: white;">
-						<h3 style = "text-decoration:underline;"><strong>INSTRUCTIONS</strong></h3>
-						<ol style="color: white;">
-              <li>This quiz consists of {{total}} multiple choice questions</li>
-					
-                     <li>The time limit of the test is 300 seconds.</li>
-                     <li>Once the time is finished the test will automatically be submitted.</li>
-					 <li>To start, click the "Start quiz" button. When finished, click the "Submit" button.   </li>
-                     <li>If you experience technical problems, you must immediately contact one of the invigilators. </li>
-          </ol>
-          <a class="submit" href="/quiz.html">START QUIZ</a>
+					<h3 style="text-decoration:underline;"><strong>INSTRUCTIONS</strong></h3>
+					<ol style="color: white;">
+						<li>This quiz consists of {{total}} multiple choice questions</li>
+
+						<li>The time limit of the test is 300 seconds.</li>
+						<li>Once the time is finished the test will automatically be submitted.</li>
+						<li>To start, click the "Start quiz" button. When finished, click the "Submit" button. </li>
+						<li>If you experience technical problems, you must immediately contact one of the invigilators.
+						</li>
+					</ol>
+					<a id="startbtn" class="submit" href="#">START QUIZ</a>
 				</div>
 			</div>
 			<div class="right">
 				<div class="right-text">
-					<h2 style = "text-decoration:underline;" ><strong>TRIVIALET</strong></h2>
+					<h2 style="text-decoration:underline;"><strong>TRIVIALET</strong></h2>
 					<h5>Made By Adarsh, Sushant & Yashraj</h5>
 				</div>
-				<div class="right-img"><img src="images/logo.png" ></div>
+				<div class="right-img"><img src="images/logo.png"></div>
 			</div>
 		</div>
-    </div>
+	</div>
+	<script src="test.js"></script>
 </body>
+
 </html>
