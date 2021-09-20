@@ -30,34 +30,34 @@
                 <a class="btn btn-primary fs-5 mt-2" href="/questions.html" role="button">All Questions</a>
             </div>
         </div>
-        <form action="/upload" method="POST">
+        <form action="#" >
             <!-- Question -->
             <div class="form-group my-2">
                 <label for="question">Question</label>
                 <input name="question" type="text" class="form-control" id="question" placeholder="Enter question"
-                    required />
+                    required >
             </div>
 
             <!-- Options -->
             <div class="form-group my-2">
                 <label for="question">Option 1</label>
                 <input name="option1" type="text" class="form-control" id="option1" placeholder="Enter option"
-                    required />
+                    required >
             </div>
             <div class="form-group my-2">
                 <label for="option2">Option 2</label>
                 <input name="option2" type="text" class="form-control" id="option2" placeholder="Enter option"
-                    required />
+                    required >
             </div>
             <div class="form-group my-2">
                 <label for="option3">Option 3</label>
                 <input name="option3" type="text" class="form-control" id="option3" placeholder="Enter option"
-                    required />
+                    required >
             </div>
             <div class="form-group my-2">
                 <label for="option4">Option 4</label>
                 <input name="option4" type="text" class="form-control" id="option4" placeholder="Enter option"
-                    required />
+                    required>
             </div>
 
             <div class="form-group my-2">
@@ -73,19 +73,18 @@
 
             <div class="form-group my-2">
                 <label for="timer">Time limit </label>
-                <input name="timer" type="number" class="form-control" id="timer" placeholder="Enter time in minutes"
-                    required="/" />
+                <input name="timer" type="number" class="form-control" id="timer" placeholder="Enter time in minutes" >
             </div>
 
             <div class="container text-center mt-5 mb-2">
-                <button type="submit" class="btn btn-success px-4 mx-2 fs-5">
+                <button type="submit" class="btn btn-success px-4 mx-2 fs-5" id="add">
                     Add
                 </button>
-                <button type="reset" class="btn btn-danger px-4 mx-2 fs-5">
+                <button type="reset" class="btn btn-danger px-4 mx-2 fs-5" id ="reset">
                     Reset
                 </button>
             </div>
         </form>
     </div>
-
+<script src="/js/admin-ques.js"></script>
 </html>
