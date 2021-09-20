@@ -21,7 +21,7 @@ fetch('https://trivialet.herokuapp.com/api/login', {
     .then(res => res.json())
     .then(json => {
         if(json.success === true){
-            window.location.replace("../admin.html");
+            window.location.replace("../admin.html")
         }else{
             window.alert("Wrong credentials");
         }
