@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Assesment</title>
+    <link rel="icon" href="images/logo.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/quiz.css">
+
+    <style>
+        
+.submit {
+    border: none;
+    padding: 15px 70px;
+    border-radius: 8px;
+    background:black;
+    color: #fff;
+    font-weight: bold;
+   
+}
+.submit:hover{
+    text-decoration: none;
+    background: #3e8e41;
+    color: white;
+}
+    </style>
+
+    
+
+</head>
+<body onload="timeout()" style="background-color: #ddd3ee">
+    <div class="jumbotron text-center text-white" style="background: linear-gradient(#f9ad29,black
+    ); background-image: url('https://images.pexels.com/photos/73873/star-clusters-rosette-nebula-star-galaxies-73873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');padding: 10px 0px;">
+        <h1 style="text-decoration: underline;"><strong>TRIVIALET</strong></h1>
+        <script type="text/javascript">
+            var timeLeft = 300;
+        </script>
+        <span>Test will get automatically submitted in <b id="time">timeout</b></span>
+        <div class="left">
+            <img src="https://c.tenor.com/8wpEhkk0WEIAAAAC/bobs-burger-louis.gif" width="250px" height="125px">
+        </div>
+    </div>
+
+    <div class="container">
+
+
+        <form action="/submitquiz" method="post" id="form1">
+
+
+            {% for question in question_list %}
+
+            <div class="card shadow-lg">
+                <div class="card-header">
+                        <h5 class="col-10">Q. {{question.question}}</h5>
+                </div>
+                
+                <div class="card-body">
+    
+    
+                    <div class="col-sm-10">
+
+
+
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="{{question.q_id}}" id="{{question.option1}}" value="{{question.option1}}" >
+                          <label class="form-check-label"  for="{{question.option1}}" >
+                            {{question.option1}}
+                          </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="{{question.q_id}}" id="{{question.option2}}" value="{{question.option2}}" >
+                            <label class="form-check-label" for="{{question.option2}}">
+                                {{question.option2}}
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="{{question.q_id}}" id="{{question.option3}}" value="{{question.option3}}" >
+                            <label class="form-check-label"  for="{{question.option3}}" >
+                                {{question.option3}}
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="{{question.q_id}}" id="{{question.option4}}" value="{{question.option4}}" >
+                            <label class="form-check-label"  for="{{question.option4}}" >
+                                {{question.option4}}
+                            </label>
+                          </div>
+                    </div>
+    
+    
+                </div>
+            </div><br>
+
+            {% endfor %}
+
+
+            <div class="col-12 text-center">
+                <button type="submit" class="btn submit">Submit</button>
+            </div>
+            
+
+              
+
+
+        </form><br><br><br><br>
+
+          
+    </div>
+
+
+    <script type="text/javascript">
+        function timeout()
+    {
+        var minute = Math.floor(timeLeft/60);
+        var second = timeLeft%60;
+
+        if(timeLeft<=0)
+        {
+            clearTimeout(tm);
+            document.getElementById('form1').submit();
+        }
+        else
+        {
+            document.getElementById('time').innerHTML = minute+" Minutes "+second+ " Seconds";
+        }
+        timeLeft--;
+
+        var tm = setTimeout(function() {timeout()}, 1000);
+    }
+
+    
+
+    </script>
+
+    <!-- <script src="{{ url_for('static', filename='js/script.js') }}"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

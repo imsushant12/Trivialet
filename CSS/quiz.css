@@ -1,0 +1,22 @@
+body{
+    background: linear-gradient(#f6bcbc,white);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.submit {
+    border: none;
+    padding: 15px 70px;
+    border-radius: 8px;
+    background: black;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0px 9px 15px -11px rgba(192 255 0);
+}
+.submit:hover{
+    text-decoration: none;
+    background: #3e8e41;
+    color: white;
+}
+.left{
+    position: relative;
+    padding: 20px 0px 0px 0px;
+}

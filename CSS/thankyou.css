@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://cdn.pixabay.com/photo/2015/09/29/15/12/stars-964022_960_720.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.button {
+    display: inline-block;
+    padding: 12px 12px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color:black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    position: relative;
+    top: 200px;
+    right: 250px;
+  }
+  
+  .button:hover {background-color: #f9ad29}
+  
+  .button:active {
+    background-color: #f9ad29;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+.end {
+    width: 900px;
+    height: 85%;
+    background:linear-gradient(#f9ad29, #000000);
+    border-radius: 10px;
+    box-shadow: 1px 4px 22px -8px rgba(0, 0, 0, 0.63);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 20px;
+    box-shadow: rgb(169 255 0) 0px 20px 30px -10px;
+    background-image: url('https://c.tenor.com/FhaeNWy75P8AAAAd/bean-mr-bean.gif'); 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+.end p{
+    text-align: center;
+    font-size:x-large;
+    color: white;
+}
+.end h2{
+    color: white;
+    text-transform: uppercase;
+}
+.end a{
+    text-decoration: none;
+    color: #fff;
+}
+.end h6{
+    color: white;
+}
+.end a:hover{
+    color: white;
+}
+h1{
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 70px;
+}
+
+@media screen and (max-width:768px) {
+    .end{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }    
+}
