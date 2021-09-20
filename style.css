@@ -82,14 +82,13 @@ form .text_field {
   width: 100%;
 }
 
-.submit_button {
+a.submit_button {
+  color:#000;
   text-align: center;
-}
-
-.submit_button button {
-  font-size: larger;
-  background: #000;
-  color: #fff;
+  text-decoration: none;
+  margin-left: 40%;
+  border: 2px solid #f9ad29;
+  font-weight: bolder;
 }
 
 /*Login-Page Style Ends*/
