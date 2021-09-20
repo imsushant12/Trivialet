@@ -65,7 +65,7 @@ function random_question(obj) {
 
   html += `
             <div class="col-12 text-center">
-            <button type="submit" class="btn submit">Submit</button>
+            <a class="btn submit" href="/thankyou.html" role="button">Submit</a>
         </div>
             `;
 
