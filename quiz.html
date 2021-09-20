@@ -48,61 +48,10 @@
 
     <div class="container">
         <form action="/submitquiz" method="post" id="form1">
-<<<<<<< HEAD
-=======
-
-            {% for question in question_list %}
-
-            <div class="card shadow-lg">
-                <div class="card-header">
-                    <h5 class="col-10">Q. {{question.question}}</h5>
-                </div>
-
-                <div class="card-body">
-                    <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="{{question.q_id}}"
-                                id="{{question.option1}}" value="{{question.option1}}">
-                            <label class="form-check-label" for="{{question.option1}}">
-                                {{question.option1}}
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="{{question.q_id}}"
-                                id="{{question.option2}}" value="{{question.option2}}">
-                            <label class="form-check-label" for="{{question.option2}}">
-                                {{question.option2}}
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="{{question.q_id}}"
-                                id="{{question.option3}}" value="{{question.option3}}">
-                            <label class="form-check-label" for="{{question.option3}}">
-                                {{question.option3}}
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="{{question.q_id}}"
-                                id="{{question.option4}}" value="{{question.option4}}">
-                            <label class="form-check-label" for="{{question.option4}}">
-                                {{question.option4}}
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div><br>
-
-            {% endfor %}
-
-            <div class="col-12 text-center">
-                <a href="thankyou.html"><button type="button" class="btn submit">Submit</button></a>
-                
-            </div>
->>>>>>> 820a9806e82cbbbc71f698f7914c2fcc8eff7451
-        </form>
+        </form> 
         <br><br><br><br>
     </div>
-
+    
     <script type="text/javascript">
         function timeout() {
             var minute = Math.floor(timeLeft / 60);
@@ -120,6 +69,7 @@
             var tm = setTimeout(function () { timeout() }, 1000);
         }
     </script>
+    <!-- <script src="{{ url_for('static', filename='js/script.js') }}"></script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -129,7 +79,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
-    <script src="test.js"></script>
+        <script src="test.js"></script>
 </body>
 
 </html>
