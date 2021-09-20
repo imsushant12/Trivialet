@@ -42,12 +42,6 @@ submit.addEventListener('click', () => {
     .then(json => {
         if(json.success === true){
             console.log(json.data)
-            // questionIn.value = ''
-            // option1In.value = ''
-            // option2In.value = ''
-            // option3In.value = ''
-            // option4In.value = ''
-            // answerIn.value = ''
         }else {
             window.alert(`${json.error}`);
         }
