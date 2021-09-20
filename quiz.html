@@ -48,6 +48,57 @@
 
     <div class="container">
         <form action="/submitquiz" method="post" id="form1">
+<<<<<<< HEAD
+=======
+
+            {% for question in question_list %}
+
+            <div class="card shadow-lg">
+                <div class="card-header">
+                    <h5 class="col-10">Q. {{question.question}}</h5>
+                </div>
+
+                <div class="card-body">
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="{{question.q_id}}"
+                                id="{{question.option1}}" value="{{question.option1}}">
+                            <label class="form-check-label" for="{{question.option1}}">
+                                {{question.option1}}
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="{{question.q_id}}"
+                                id="{{question.option2}}" value="{{question.option2}}">
+                            <label class="form-check-label" for="{{question.option2}}">
+                                {{question.option2}}
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="{{question.q_id}}"
+                                id="{{question.option3}}" value="{{question.option3}}">
+                            <label class="form-check-label" for="{{question.option3}}">
+                                {{question.option3}}
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="{{question.q_id}}"
+                                id="{{question.option4}}" value="{{question.option4}}">
+                            <label class="form-check-label" for="{{question.option4}}">
+                                {{question.option4}}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+
+            {% endfor %}
+
+            <div class="col-12 text-center">
+                <a href="thankyou.html"><button type="button" class="btn submit">Submit</button></a>
+                
+            </div>
+>>>>>>> 820a9806e82cbbbc71f698f7914c2fcc8eff7451
         </form>
         <br><br><br><br>
     </div>
