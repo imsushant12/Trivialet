@@ -1,0 +1,31 @@
+{
+  "name": "trivialet_backend",
+  "version": "1.0.0",
+  "description": "backend part of trivialet",
+  "main": "server.js",
+  "scripts": {
+    "start": "set NODE_ENV=production&&node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashrajpany/trivialet_backend.git"
+  },
+  "author": "Yashraj Pany",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashrajpany/trivialet_backend/issues"
+  },
+  "homepage": "https://github.com/yashrajpany/trivialet_backend#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "colors": "^1.4.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.6",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
