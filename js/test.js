@@ -1,4 +1,4 @@
-
+let score = 0
 const xhr = new XMLHttpRequest();
 xhr.open("GET", "https://trivialet.herokuapp.com/api/questions", true);
 
@@ -82,20 +82,28 @@ function click(obj){
 function checkAnswer (obj) {
     const questionData = obj.data
     var ans = document.getElementsByClassName('form-check-input')
-    var selected = new Array()
 
      for (var i = 0; i < ans.length; i++) {
         if (ans[i].checked) {
-            selected.push(ans[i].value)
+           if(ans[i].value === questionData[i]) {
+               score*=2
+           }
         }
     }
-    
-    if(questionData[0].correct == selected[0]){
-        console.log('success')
-    }else{
-        // console.log('success')
-        console.log(questionData[0].correct)
-        console.log(selected[0])
-    }
-    
+   
+    fetch('https://trivialet.herokuapp.com/api/results', {
+        method: 'POST', 
+        body: JSON.stringify({
+            name:'test',
+            email:'test',
+            score,
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    })})
+    .then(res => res.json())
+    .then(json => {
+            window.location.replace("../thankyou.html")
+    })
 }
+
