@@ -62,29 +62,6 @@ For deployment we have used Heroku as a platform. The project works Successfully
 - Use VS Code for better experience
 
 
-## App Backend 🔚
-#### Questions :
-[GET - Get all questions](https://trivialet.herokuapp.com/api/questions) : Use this URL to fetch all the questions.
-
-[GET - Test questions](https://trivialet.herokuapp.com/api/test) : Use this URL to fetch all the quiz questions in a random manner.
-
-[POST - Create questions](https://trivialet.herokuapp.com/api/questions) : Use this URL to add a question from admin's dashboard.
-
-[PUT - Update a question](https://trivialet.herokuapp.com/api/question/1) : Use this URL to update a particular question.
-
-[DEL - Delete a question](https://trivialet.herokuapp.com/api/question/1) : Use this URL to delete a particular question.
-
-#### Results : 
-[GET - Get all results](https://trivialet.herokuapp.com/api/results) : Use this URL to fetch all the results.
-
-[POST - Create result](https://trivialet.herokuapp.com/api/results) : Use this URL to add result.
-
-#### Admins : 
-[POST - Check credentials](https://trivialet.herokuapp.com/api/login) : Use this URL to fetch all the added credentials.
-
-[POST - Create Admin/ Registration](https://trivialet.herokuapp.com/api/admin) : Use this URL to add credentialsl.
-
-
 ## App Frontend 📺
 `Index page`- to Welcome users ,here the user can register & Login
 
@@ -107,6 +84,28 @@ For deployment we have used Heroku as a platform. The project works Successfully
 `Result page` - Result of all the student is displayed here to Admin
 
 `Thankyou page` - End page after the Test finished
+## App Backend 🔚
+#### Questions :
+[GET - Get all questions](https://trivialet.herokuapp.com/api/questions) : Use this URL to fetch all the questions.
+
+[GET - Test questions](https://trivialet.herokuapp.com/api/test) : Use this URL to fetch all the quiz questions in a random manner.
+
+[POST - Create questions](https://trivialet.herokuapp.com/api/questions) : Use this URL to add a question from admin's dashboard.
+
+[PUT - Update a question](https://trivialet.herokuapp.com/api/question/1) : Use this URL to update a particular question.
+
+[DEL - Delete a question](https://trivialet.herokuapp.com/api/question/1) : Use this URL to delete a particular question.
+
+#### Results : 
+[GET - Get all results](https://trivialet.herokuapp.com/api/results) : Use this URL to fetch all the results.
+
+[POST - Create result](https://trivialet.herokuapp.com/api/results) : Use this URL to add result.
+
+#### Admins : 
+[POST - Check credentials](https://trivialet.herokuapp.com/api/login) : Use this URL to fetch all the added credentials.
+
+[POST - Create Admin/ Registration](https://trivialet.herokuapp.com/api/admin) : Use this URL to add credentialsl.
+
 
 ## Our Contributors 👥
 
