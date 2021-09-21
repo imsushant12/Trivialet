@@ -1,17 +1,16 @@
 
 # Trivialet 🏆
 
-This is an online assesment platform made by 🙈Adarsh Jain, 🙉Sushant Gaurav and 🙊Yashraj Pany
+This is an online assesment platform made by 🙈Adarsh Jain, 🙉Sushant Gaurav and 🙊Yashraj Pany.
 
-The general portal for publishing exam results at universities. Students can get their exam results without any other medium like Email, Messaging etc. There are two modes of users,
+The general portal for publishing exam results at universities. Students can get their exam results without any other medium like Email, Messaging etc. There are two modes of users:
 
 1. Students 👶
 
 2. Administrator 🧔
 
-## About Project
+## About Project 🚧
 Today Online Examination System has become a fast growing examination method because of its speed and accuracy. It is also needed less manpower to execute the examination. Almost all organizations now-a-days, are conducting their objective exams by online examination system, it saves students time in examinations
-
 
 
 ## Required Functionality ⌛
@@ -77,9 +76,7 @@ Today Online Examination System has become a fast growing examination method bec
 [POST - Create Admin/ Registration](https://trivialet.herokuapp.com/api/admin) : Use this URL to add credentialsl.
 
 
-## Our Contributors
+## Our Contributors 👥
 
 [CONTRIBUTORS.md](https://github.com/imsushant12/Trivialet/blob/master/CONTRIBUTORS.md)
 
-
-  
