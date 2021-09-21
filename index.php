@@ -1,3 +1,3 @@
 <?php
-    include_once("registration.html")
+    include_once("index.html")
 ?>
