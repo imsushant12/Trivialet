@@ -5,7 +5,8 @@ xhr.open("GET", "https://trivialet.herokuapp.com/api/questions", true);
 
 xhr.onload = function () {
     obj = JSON.parse(this.responseText);
-    random_question(obj);
+    random_question(obj)
+    click(obj)
 };
 
 xhr.send();
@@ -56,7 +57,6 @@ function random_question(obj){
                         </label>
                     </div>
                 </div>
-                <button type="submit" class="btn_next btn submit">Next</button>
             </div>
         </div>
             `  
@@ -66,13 +66,36 @@ function random_question(obj){
         form.innerHTML = html;
         
 }
-const submit = document.querySelector('.btn')
-submit.addEventListener('click', () =>{
-    checkAnswer()
-}) 
 
 
-function checkAnswer () {
-    const answer = document.querySelector('input[type="radio"]:checked').value;
-    console.log(answer)
+function click(obj){
+    
+    const submit = document.querySelector('.btn')
+
+    submit.addEventListener('click', () =>{
+        checkAnswer(obj)
+    }) 
+}
+
+
+
+function checkAnswer (obj) {
+    const questionData = obj.data
+    var ans = document.getElementsByClassName('form-check-input')
+    var selected = new Array()
+
+     for (var i = 0; i < ans.length; i++) {
+        if (ans[i].checked) {
+            selected.push(ans[i].value)
+        }
+    }
+    
+    if(questionData[0].correct == selected[0]){
+        console.log('success')
+    }else{
+        // console.log('success')
+        console.log(questionData[0].correct)
+        console.log(selected[0])
+    }
+    
 }
