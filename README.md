@@ -32,11 +32,11 @@ Today Online Examination System has become a fast growing examination method bec
 - Creative UI Experience ✔️
 - Maintained a database of students and thier data ✔️
 
-## CI/CD
+## CI/CD 💡
 
 - A deployed version can be checked here: https://online-assessment-final.herokuapp.com/
 
-## Deployment
+## Deployment 🔥
 For deployment we have used Heroku as a platform. The project works Successfully.
 
 
@@ -84,7 +84,7 @@ For deployment we have used Heroku as a platform. The project works Successfully
 [POST - Create Admin/ Registration](https://trivialet.herokuapp.com/api/admin) : Use this URL to add credentialsl.
 
 
-## App Frontend
+## App Frontend 📺
 `Index page`- to Welcome users ,here the user can register & Login
 
 `Admin Login`- For login to Admin panel
