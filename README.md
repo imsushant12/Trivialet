@@ -35,6 +35,7 @@ Today Online Examination System has become a fast growing examination method bec
 ## CI/CD 💡
 
 - A deployed version can be checked here: https://tivialet-frontend.herokuapp.com/
+- For Admin you have to Register and then Login and for Student they can simply start the test.
 
 ## Deployment 🔥
 For deployment we have used Heroku as a platform. The project works Successfully.
