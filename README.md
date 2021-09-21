@@ -54,6 +54,9 @@ Today Online Examination System has become a fast growing examination method bec
 - Use VS Code for better experience
 
 
+## Our Contributors
+
+[CONTRIBUTORS.md](https://github.com/imsushant12/Trivialet/blob/master/CONTRIBUTORS.md)
 
 
   
