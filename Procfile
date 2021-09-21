@@ -1,1 +1,0 @@
-web: admin-login.html
