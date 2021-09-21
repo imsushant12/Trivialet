@@ -56,6 +56,7 @@ function random_question(obj){
                         </label>
                     </div>
                 </div>
+                <button type="submit" class="btn_next btn submit">Next</button>
             </div>
         </div>
             `  
