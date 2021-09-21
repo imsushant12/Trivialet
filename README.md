@@ -1,7 +1,7 @@
 
 # Trivialet 🏆
 
-This is an online assesment platform made by 🙈Adarsh Jain, 🙉Sushant Gaurav and 🙊Yahsraj Pany
+This is an online assesment platform made by 🙈Adarsh Jain, 🙉Sushant Gaurav and 🙊Yashraj Pany
 
 The general portal for publishing exam results at universities. Students can get their exam results without any other medium like Email, Messaging etc. There are two modes of users,
 
