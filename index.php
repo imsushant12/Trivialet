@@ -1,3 +1,3 @@
 <?php
-    include_once("admin-login.html")
+    include_once("registration.html")
 ?>
