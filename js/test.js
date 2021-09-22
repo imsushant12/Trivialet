@@ -100,16 +100,14 @@ function checkAnswer (obj) {
             score= score+2
         }
    }
-   console.log(`${score} is your score`)
    
+   sessionStorage.setItem('score',`${score}`)
 
-
-   
     fetch('https://trivialet.herokuapp.com/api/results', {
         method: 'POST', 
         body: JSON.stringify({
-            name:'test',
-            email:'test',
+            name:sessionStorage.getItem('name'),
+            email:sessionStorage.getItem('email'),
             score
         }),
         headers: {
@@ -118,7 +116,7 @@ function checkAnswer (obj) {
     })
     .then(res => res.json())
     .then(json => {
-            // window.location.replace("../thankyou.html")
+            window.location.replace("../thankyou.html")
     })
 }
 
