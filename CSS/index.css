@@ -52,4 +52,50 @@ body {
     top: 30px;
    
   }
+  /* media query */
+@media screen and (max-width: 768px) {
+  .main_box{
+      flex-direction:column;
+  }
+  .main_box .left{
+      width: 100%;
+  }
+  .main_box .right{
+      width: 100%;
+  }
+  .h1{
+    width: 100%;
+  }
+  .body{
+    width: 100%;
+  }
+  .center{
+    position:absolute;
+    margin: 10px 10px;
+    
+  }
+  .gif{
+    position: absolute;
+    left: 20px;
+  }
+  .btn{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 60px;
+    top: 100px;
+  }
+  .btn button{
+    margin:50px 20px 5px 40px;
+  }
+  .topr{
+    position: absolute;
+    left: 220px;
+    top: 80px;
+  }
+  .gif img{
+    width: 300px;
+    height: 150px;
+  }
+}
   
