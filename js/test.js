@@ -12,12 +12,11 @@ xhr.onload = function () {
 xhr.send();
 
 function random_question(obj){
-    console.log(obj);
     let html = '';
     const questionData = obj.data;
     questionData.sort(() => Math.random() - 0.5);
     questionData.splice(5- questionData.length);
-    console.log(questionData);
+
 
         questionData.forEach(function(element, index) {
             html += `
@@ -82,28 +81,44 @@ function click(obj){
 function checkAnswer (obj) {
     const questionData = obj.data
     var ans = document.getElementsByClassName('form-check-input')
+    let submitted =  new Array()
+    let answer = new Array()
 
      for (var i = 0; i < ans.length; i++) {
         if (ans[i].checked) {
-           if(ans[i].value === questionData[i]) {
-               score*=2
-           }
+           submitted.push(ans[i].value.replace(/\s/g, ""))
         }
     }
+     for (var i = 0; i < questionData.length; i++) {
+         if(questionData[i]){
+            answer.push(questionData[i].correct.replace(/\s/g, ""))
+         }
+    }
+
+    for (var i = 0; i < questionData.length; i++) {
+        if(answer[i] === submitted[i]){
+            score= score+2
+        }
+   }
+   console.log(`${score} is your score`)
+   
+
+
    
     fetch('https://trivialet.herokuapp.com/api/results', {
         method: 'POST', 
         body: JSON.stringify({
             name:'test',
             email:'test',
-            score,
+            score
+        }),
         headers: {
             "Content-type": "application/json; charset=UTF-8"
         }
-    })})
+    })
     .then(res => res.json())
     .then(json => {
-            window.location.replace("../thankyou.html")
+            // window.location.replace("../thankyou.html")
     })
 }
 
