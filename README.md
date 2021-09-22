@@ -32,6 +32,15 @@ Today Online Examination System has become a fast growing examination method bec
 - Creative UI Experience ✔️
 - Maintained a database of students and thier data ✔️
 
+## CI/CD 💡
+
+- A deployed version can be checked here - [Trivialet Quiz](https://tivialet-frontend.herokuapp.com)
+- For Admin you have to Register and then Login and for Student they can simply start the test.
+
+## Deployment 🔥
+For deployment we have used Heroku as a platform. The project works Successfully.
+
+
 ## Tech Stack ❄️
 
 **Client:** HTML, CSS, Javascript 🧑‍💻
@@ -53,6 +62,28 @@ Today Online Examination System has become a fast growing examination method bec
 - Use VS Code for better experience
 
 
+## App Frontend 📺
+`Index page`- to Welcome users ,here the user can register & Login
+
+`Admin Login`- For login to Admin panel
+
+`Admin page` - here the Admin can Set paper, View all reesult, Naviagte to Test Link, See all the Questions added
+
+`All Question` - To take input of all Questions with options
+
+`Instruction page`-To instruct student on rules and regulation of giving the test 
+
+`Login Page` - to take user data who is giving the test
+
+`Quiz page` - to take response of user, Shuffeled questions appeared here
+
+`Register Success`- to make user know that thier Registration is Succesfull, Now they can easily Login
+
+`Registration page`- to take user data and feed into database for easy login
+
+`Result page` - Result of all the student is displayed here to Admin
+
+`Thankyou page` - End page after the Test finished
 ## App Backend 🔚
 #### Questions :
 [GET - Get all questions](https://trivialet.herokuapp.com/api/questions) : Use this URL to fetch all the questions.
