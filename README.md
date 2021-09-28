@@ -12,6 +12,8 @@ The general portal for publishing exam results at universities. Students can get
 ## Demo Video
 
 [![asciicast](https://c.tenor.com/wRREzCO93yQAAAAC/trivia-night.gif)](https://vimeo.com/617155160)
+
+
  `Click on the Image`
 
 ## About Project 🚧
